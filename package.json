@@ -1,0 +1,36 @@
+{
+  "name": "youtube-curator",
+  "version": "1.0.0",
+  "description": "Curate YouTube videos of specific genres",
+  "author": "hirotoshi",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest",
+    "dev-debug": "node --inspect-brk=9229 node_modules/nuxt/bin/nuxt",
+    "heroku-postbuild": "npm run build",
+    "dev-mobile": "cross-env HOST=0.0.0.0 PORT=3000 nuxt"
+  },
+  "dependencies": {
+    "@firebase/app": "^0.6.11",
+    "@nuxtjs/axios": "^5.3.6",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "firebase": "^7.23.0",
+    "lodash": "^4.17.20",
+    "nuxt": "^2.0.0",
+    "vue-gapi": "^0.3.1",
+    "vue-resize-observer": "^1.0.32",
+    "vue-youtube": "^1.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.0.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "vue-jest": "^4.0.0-0"
+  }
+}
